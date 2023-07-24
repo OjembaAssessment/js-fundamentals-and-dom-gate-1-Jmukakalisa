@@ -3,18 +3,24 @@
 
 <head>
     <link rel="stylesheet" href="timer.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-
-    <h2>Exercise 3 - Timer</h2>
-
-    <div id="myTimer">
-        Your timer should go here!
+<body class="flex flex-col items-center justify-around">
+    <h2 class="text-indigo-500 font-bold text-3xl">Timer App</h2>  
+    <div class="flex gap-4 py-6">
+        <button class="border-2 border-slate-400 py-2 px-8 bg-indigo-200" id="addButton" onclick="addSecond()">+</button>
+        <button class="border-2 py-6 px-16 border-slate-400 bg-indigo-200" id="timer">0s</button>
+        <button class="border-2 border-slate-400 py-2 px-10 bg-indigo-200" id="subtractButton" onclick="subtractSecond()">-</button>
     </div>
 
+    <div class="flex gap-10">
+        <button class="border-2 border-slate-400 py-2 px-6 bg-indigo-200" id="resetButton" onclick="resetTimer()">Reset</button>
+        <button class="border-2 border-slate-400 py-2 px-6 bg-indigo-200" id="startStopButton" onclick="toggleTimer()">Start</button>
+    </div>
+  
     <script src="./timer.js"></script>
-
-</body>
+  </body>
+  
 
 </html>
